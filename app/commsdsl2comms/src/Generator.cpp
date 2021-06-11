@@ -37,6 +37,7 @@
 #include "Test.h"
 #include "Dispatch.h"
 #include "License.h"
+#include "Latex.h"
 
 namespace bf = boost::filesystem;
 namespace ba = boost::algorithm;
@@ -1182,7 +1183,8 @@ bool Generator::writeFiles()
 
     if ((!DefaultOptions::write(*this)) ||
         (!Cmake::write(*this)) ||
-        (!Doxygen::write(*this)) ||
+        (!Doxygen::write(*this)) || 
+        (!Latex::write(*this)) ||
         (!License::write(*this)) ||
         (!Test::write(*this)) ||
         (!writeExtraFiles())){

@@ -163,6 +163,11 @@ std::string Frame::getDataViewDefaultOptions(const std::string& base) const
     return getOptions(&Layer::getDataViewDefaultOptions, base);
 }
 
+const commsdsl::Frame& Frame::getDsl() const
+{
+    return m_dslObj;
+}
+
 std::vector<std::string> Frame::getPseudoVersionLayers(
     const std::vector<std::string>& interfaceVersionFields) const
 {

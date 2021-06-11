@@ -47,6 +47,7 @@ set (
     "Version.cpp"
     "Test.cpp"
     "License.cpp"
+    "Latex.cpp"
 )
 
 add_executable(${APP_NAME} ${src})
@@ -65,4 +66,3 @@ endif ()
 install(TARGETS ${APP_NAME}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-

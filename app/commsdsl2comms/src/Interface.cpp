@@ -257,6 +257,11 @@ std::vector<std::string> Interface::getVersionFields() const
     return result;
 }
 
+const commsdsl::Interface& Interface::getDsl() const
+{
+    return m_dslObj;
+}
+
 bool Interface::writeProtocolDefinitionCommonFile()
 {
     common::StringsList commonElems;

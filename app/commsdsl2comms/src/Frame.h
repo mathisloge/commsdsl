@@ -51,6 +51,7 @@ public:
     std::string getDefaultOptions(const std::string& base) const;
     std::string getBareMetalDefaultOptions(const std::string& base) const;
     std::string getDataViewDefaultOptions(const std::string& base) const;
+    const commsdsl::Frame& getDsl() const;
 
     const std::string& externalRef() const
     {
